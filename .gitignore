@@ -1,0 +1,15 @@
+# these are global git ignore configurations
+**/.DS_Store
+**/*.exe
+**/*.pyc
+**/__pycache__/
+
+# These are symbolic links generated at root by bazel
+**/bazel-*
+
+# Bazel lock files
+MODULE.bazel
+MODULE.bazel.lock
+
+# remove pytest cache
+.pytest_cache
