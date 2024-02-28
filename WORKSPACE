@@ -7,6 +7,15 @@ http_archive(
     sha256 = "1f357c27ca988c3f7c6b4bf68a9395005ac6761f034046e9dde0896e3aba00e4",
 )
 
+# Fake Function Framework (fff)
+http_archive(
+    name = "fff",
+    urls = ["https://github.com/meekrosoft/fff/archive/refs/tags/v1.1.zip"],
+    strip_prefix = "fff-1.1",
+    sha256 = "5a8329878f59bd1ea19b734573d63c228f742384b8c78d00e4d005909b90ee83",
+    build_file = "//infrastructure/bazel/testing:fff.BUILD",
+)
+
 
 # Armv8 Architecture GCC cross compiler targeting Linux Apps for Linux x86 host machine
 http_archive(
