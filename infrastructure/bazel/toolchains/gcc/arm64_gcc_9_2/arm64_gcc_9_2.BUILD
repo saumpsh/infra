@@ -48,6 +48,7 @@ cc_toolchain_config(
         "-I", "external/arm64_gcc_9_2_linux_x86_64/aarch64-none-linux-gnu/include",
         "-I", "external/arm64_gcc_9_2_linux_x86_64/aarch64-none-linux-gnu/libc/usr/include",
         "-I", "external/arm64_gcc_9_2_linux_x86_64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include",
+        "-I", "external/arm64_gcc_9_2_linux_x86_64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed",
     ],
     link_flags = [],
 )

@@ -26,7 +26,20 @@ http_archive(
     build_file = "//infrastructure/bazel/toolchains/gcc/arm64_gcc_9_2:arm64_gcc_9_2.BUILD",
 )
 
+# Armv8 Architecture GCC 4.7 cross compiler targeting Linux Apps for Linux x86 host machine
+http_archive(
+    name = "arm64_gcc_4_7_linux_x86_64",
+    urls = ["https://releases.linaro.org/archive/13.04/components/toolchain/binaries/gcc-linaro-aarch64-linux-gnu-4.7-2013.04-20130415_linux.tar.xz"],
+    strip_prefix = "gcc-linaro-aarch64-linux-gnu-4.7-2013.04-20130415_linux",
+    # sha256 = "8dfe681531f0bd04fb9c53cf3c0a3368c616aa85d48938eebe2b516376e06a66",
+    build_file = "//infrastructure/bazel/toolchains/gcc/arm64_gcc_4_7:arm64_gcc_4_7.BUILD",
+)
+
 # Register Armv8 cross compiler
 register_toolchains(
     "//infrastructure/bazel/toolchains:arm64_gcc_9_2_linux_x86_64",
+)
+
+register_toolchains(
+    "//infrastructure/bazel/toolchains:arm64_gcc_4_7_linux_x86_64",
 )
