@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+      "d3vnu1l.template-generator-vscode",
+      "ms-vscode.cpptools",
+      "xaver.clang-format",
+      "bazelbuild.vscode-bazel",
+      "streetsidesoftware.code-spell-checker",
+      "ms-vscode-remote.remote-ssh",
+    ]
+}

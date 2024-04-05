@@ -1,0 +1,12 @@
+{
+    "editor.tabSize": 2,
+    "[python]": {
+      "editor.tabSize": 4
+    },
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
+
+    "templateGenerator.templatesPath": "${rootPath}/infrastructure/templates",
+
+    "cmake.configureOnOpen": false, // Don't pester to configure CMake on launch. We don't use CMake manually.
+}
