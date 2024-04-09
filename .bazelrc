@@ -1,1 +1,4 @@
+# Bazel Workspace configuration to run specific commands
+
+# Show detailed output when tests fail
 test --test_output=errors
