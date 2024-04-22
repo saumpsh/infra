@@ -3,5 +3,5 @@ cc_library(
   srcs = ["display.cpp"],
   hdrs = ["display.h"],
   includes = ["."],
-  visibility = ["//src/hello_fff:__subpackages__"],
+  visibility = ["//src/examples/hello_fff:__subpackages__"],
 )

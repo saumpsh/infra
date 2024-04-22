@@ -4,6 +4,6 @@ cc_test(
   deps = [
     "@com_google_googletest//:gtest_main",
     "@fff//:fff_macros",
-    "//src/hello_fff",
+    "//src/examples/hello_fff",
   ],
 )

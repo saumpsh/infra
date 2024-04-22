@@ -3,6 +3,6 @@ cc_library(
   srcs = ["hello_fff.cpp"],
   hdrs = ["hello_fff.h"],
   includes = ["."],
-  visibility = ["//src/hello_fff/test:__pkg__"],
-  deps = ["//src/hello_fff/display"]
+  visibility = ["//src/examples/hello_fff/test:__pkg__"],
+  deps = ["//src/examples/hello_fff/display"]
 )
