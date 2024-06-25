@@ -30,8 +30,8 @@ cc_toolchain_config(
     abi_version = "unknown",
     abi_libc_version = "unknown",
     tool_paths = {
-        "gcc": "bin/aarch64-none-linux-gnu-g++",
-        "cpp": "bin/aarch64-none-linux-gnu-cpp",
+        "gcc": "bin/aarch64-none-linux-gnu-gcc",
+        "cpp": "/bin/false",
         "ar": "bin/aarch64-none-linux-gnu-ar",
         "nm": "bin/aarch64-none-linux-gnu-nm",
         "ld": "bin/aarch64-none-linux-gnu-ld",
@@ -50,5 +50,5 @@ cc_toolchain_config(
         "-I", "external/arm64_gcc_9_2_linux_x86_64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include",
         "-I", "external/arm64_gcc_9_2_linux_x86_64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed",
     ],
-    link_flags = [],
+    link_flags = ["-lstdc++"],
 )
