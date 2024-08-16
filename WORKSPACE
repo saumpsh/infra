@@ -51,3 +51,26 @@ http_archive(
   sha256 = "3c743204df78366ad2eaf236d6631d83f6bc928d1705dd0000b872e53b73dc6a",
   strip_prefix = "abseil-cpp-20240116.1",
 )
+
+http_archive(
+    name = "rules_pkg",
+    sha256 = "451e08a4d78988c06fa3f9306ec813b836b1d076d0f055595444ba4ff22b867f",
+    urls = [
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_pkg/releases/download/0.7.1/rules_pkg-0.7.1.tar.gz",
+        "https://github.com/bazelbuild/rules_pkg/releases/download/0.7.1/rules_pkg-0.7.1.tar.gz",
+    ],
+)
+
+http_archive(
+    name = "zlib",  # Don't change this name, this is intended to override protobuf's @zlib.
+    build_file = "@//3rdparty:zlib.BUILD",
+    sha256 = "629380c90a77b964d896ed37163f5c3a34f6e6d897311f1df2a7016355c45eff",
+    strip_prefix = "zlib-1.2.11",
+    urls = ["https://github.com/madler/zlib/archive/refs/tags/v1.2.11.tar.gz"],
+)
+
+http_archive(
+    name = "com_google_protobuf",
+    urls = ["https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.20.1.tar.gz"],
+    strip_prefix = "protobuf-3.20.1",
+)
