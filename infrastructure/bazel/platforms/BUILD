@@ -13,3 +13,11 @@ platform(
         "//infrastructure/bazel/constraints/compiler:gcc-4.7",
     ],
 )
+
+platform(
+    name = "clang_linux",
+    constraint_values = [
+        "@platforms//cpu:x86_64",
+        "//infrastructure/bazel/constraints/compiler:clang-14",
+    ],
+)

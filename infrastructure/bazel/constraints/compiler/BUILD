@@ -17,3 +17,8 @@ constraint_value(
     name = "gcc-4.7",
     constraint_setting = CONSTRAINT_SETTING,
 )
+
+constraint_value(
+    name = "clang-14",
+    constraint_setting = CONSTRAINT_SETTING,
+)

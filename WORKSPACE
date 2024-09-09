@@ -29,6 +29,11 @@ register_toolchains(
     "//infrastructure/bazel/toolchains:arm64_gcc_4_7_linux_x86_64",
 )
 
+# Clang compiler. sudo apt install clang-14 (only from ubuntu 22.04 onwards)
+register_toolchains(
+    "//infrastructure/bazel/toolchains:clang_linux",
+)
+
 http_archive(
     name = "com_google_googletest",
     urls = ["https://github.com/google/googletest/archive/refs/tags/release-1.11.0.tar.gz"],
