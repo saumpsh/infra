@@ -9,11 +9,11 @@ def cc_dbc_library(name, dbc, outfile = None, **kwargs):
     Building this target by default will appear to do nothing. To view the generated DBC file, build this target and append `_genrule` to the target name. For example:
     ```
     rules.cc_dbc_library(
-        name = "example_dbc",
-        dbc = "example.dbc",
+        name = "motohawk_dbc",
+        dbc = "motohawk.dbc",
     )
     ```
-    Building the implicit target `:example_dbc_genrule` will then print the path to the generated DBC header so that you can review it.
+    Building the implicit target `:motohawk_dbc_genrule` will then print the path to the generated DBC header so that you can review it.
 
     Args:
         name: name of the target
